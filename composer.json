@@ -1,0 +1,74 @@
+{
+  "name": "codexten/codexten-yii-starter",
+  "type": "project",
+  "description": "Yii Starter App with Admin panel and frontend",
+  "keywords": [
+    "yii2",
+    "yii2-starter"
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "codexten/yii-app-admin": "~2.0",
+    "codexten/yii-app-site": "~2.0",
+    "codexten/yii-app-console": "~2.0",
+    "codexten/yii-app-storage": "~2.0",
+    "codexten/yii-mailqueue": "~2.0",
+    "codexten/yii-bootswatch": "~2.0",
+    "codexten/yii-adminlte2": "~2.0",
+    "codexten/yii-module-auth": "~2.0"
+  },
+  "require-dev": {
+    "codexten/yii-dev": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "core\\": "src/core",
+      "admin\\": "src/admin",
+      "site\\": "src/site"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.packagist.com/entero/"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "config": {
+    "process-timeout": 0,
+    "secure-http": false,
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "./vendor/bin/hidev ext",
+      "composer du --verbose",
+      "chown -R www-data:www-data /cpanel /en /project"
+    ],
+    "post-update-cmd": [
+      "composer install"
+    ]
+  },
+  "extra": {
+    "config-plugin": {
+      "params": "config/params.php",
+      "core": "config/core.php",
+      "console": "config/console.php",
+      "admin": [
+        "$adminlte2",
+        "$moduleAuth",
+        "config/admin.php"
+      ],
+      "site": [
+        "$bootswatch",
+        "$moduleAuth",
+        "config/site.php"
+      ]
+    }
+  }
+}
