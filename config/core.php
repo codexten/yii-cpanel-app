@@ -8,4 +8,10 @@
 
 return [
     'name' => 'Starter App',
+    'components' => [
+        'filedb' => [
+            'class' => 'yii2tech\filedb\Connection',
+            'path' => '@app/data/static',
+        ],
+    ],
 ];

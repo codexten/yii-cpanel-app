@@ -14,7 +14,8 @@
     "codexten/yii-mailqueue": "~2.0",
     "codexten/yii-adminlte2": "~2.0",
     "codexten/yii-module-auth": "~2.0",
-    "codexten/yii-cron": "~2.0"
+    "codexten/yii-cron": "~2.0",
+    "yii2tech/filedb": "*"
   },
   "require-dev": {
     "codexten/yii-dev": "~2.0"
@@ -22,7 +23,8 @@
   "autoload": {
     "psr-4": {
       "core\\": "src/core",
-      "admin\\": "src/admin"
+      "admin\\": "src/admin",
+      "data\\": "src/data"
     }
   },
   "repositories": [
@@ -46,7 +48,7 @@
     "post-install-cmd": [
       "./vendor/bin/hidev ext",
       "composer du --verbose",
-      "chown -R www-data:www-data /cpanel /en /project"
+      "chown -R www-data:www-data /en ."
     ],
     "post-update-cmd": [
       "composer install"
