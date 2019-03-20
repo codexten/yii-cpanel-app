@@ -11,7 +11,7 @@ return [
     'components' => [
         'filedb' => [
             'class' => 'yii2tech\filedb\Connection',
-            'path' => '@app/data/static',
+            'path' => '@data/static',
         ],
     ],
 ];

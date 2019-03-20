@@ -16,6 +16,11 @@
                 'icon' => 'tachometer',
                 'url' => ['/dashboard/index'],
             ],
+            [
+                'label' => 'Domains',
+                'icon' => 'globe',
+                'url' => ['/domain/index'],
+            ],
         ],
     ]
 ) ?>
