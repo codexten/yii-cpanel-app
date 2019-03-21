@@ -65,6 +65,8 @@ RUN composer global require hirak/prestissimo
 #RUN apt-get install curl gnupg -yq && curl -sL https://deb.nodesource.com/setup_8.x | bash \
 #    && apt-get install nodejs -yq
 
+RUN docker-php-ext-install pcntl
+
 WORKDIR /project
 EXPOSE 9000
 
