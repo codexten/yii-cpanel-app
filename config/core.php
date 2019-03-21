@@ -7,11 +7,8 @@
  */
 
 return [
-    'name' => 'Starter App',
+    'name' => 'Cpanel',
     'components' => [
-        'filedb' => [
-            'class' => 'yii2tech\filedb\Connection',
-            'path' => '@data/static',
-        ],
+
     ],
 ];
