@@ -21,6 +21,11 @@
                 'icon' => 'globe',
                 'url' => ['/domain/index'],
             ],
+            [
+                'label' => 'Cron Jobs',
+                'icon' => 'globe',
+                'url' => ['/cron'],
+            ],
         ],
     ]
 ) ?>

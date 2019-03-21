@@ -17,7 +17,8 @@
     "codexten/yii-cron": "~2.0"
   },
   "require-dev": {
-    "codexten/yii-dev": "~2.0"
+    "codexten/yii-dev": "~2.0",
+    "symfony/thanks": "^1.0@dev"
   },
   "autoload": {
     "psr-4": {
