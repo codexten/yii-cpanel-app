@@ -350,6 +350,44 @@
             "time": "2013-12-10T17:49:58+00:00"
         },
         {
+            "name": "cocur/background-process",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/background-process.git",
+                "reference": "9ae2902922f02ec5544d723756758eb7304c6869"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/background-process/zipball/9ae2902922f02ec5544d723756758eb7304c6869",
+                "reference": "9ae2902922f02ec5544d723756758eb7304c6869",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8|~5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\BackgroundProcess\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Start processes in the background that continue running when the PHP process exists.",
+            "keywords": [
+                "background",
+                "process",
+                "unix"
+            ],
+            "time": "2017-02-11T12:41:41+00:00"
+        },
+        {
             "name": "codexten/app-admin-dev",
             "version": "dev-master",
             "source": {
@@ -803,13 +841,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codexten/yii-process.git",
-                "reference": "189e3afc571b344d26f7505b7e65ea0bc719c457"
+                "reference": "3200b4cc551ba7a326710313da3d5b888afc024d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codexten/yii-process/zipball/189e3afc571b344d26f7505b7e65ea0bc719c457",
-                "reference": "189e3afc571b344d26f7505b7e65ea0bc719c457",
+                "url": "https://api.github.com/repos/codexten/yii-process/zipball/3200b4cc551ba7a326710313da3d5b888afc024d",
+                "reference": "3200b4cc551ba7a326710313da3d5b888afc024d",
                 "shasum": ""
+            },
+            "require": {
+                "cocur/background-process": "*"
             },
             "type": "library",
             "extra": {
@@ -830,7 +871,7 @@
             "keywords": [
                 "codexten"
             ],
-            "time": "2019-03-22T14:39:15+00:00"
+            "time": "2019-03-22T15:20:24+00:00"
         },
         {
             "name": "codexten/yii-settings",

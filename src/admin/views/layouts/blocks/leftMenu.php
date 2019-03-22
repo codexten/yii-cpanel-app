@@ -26,6 +26,11 @@
                 'icon' => 'globe',
                 'url' => ['/cron'],
             ],
+            [
+                'label' => 'Process',
+                'icon' => 'globe',
+                'url' => ['/process'],
+            ],
         ],
     ]
 ) ?>
