@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e5914235b519252d3711c91ab3788c6a",
+    "content-hash": "7bf8041d28c6444ccd8b1b0c68a701c3",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -391,12 +391,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codexten/docs.git",
-                "reference": "b840a19978f4c193042ba8718f9c492816483b78"
+                "reference": "7bb008edb4c037f04095cd759f32120c32f5a362"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codexten/docs/zipball/b840a19978f4c193042ba8718f9c492816483b78",
-                "reference": "b840a19978f4c193042ba8718f9c492816483b78",
+                "url": "https://api.github.com/repos/codexten/docs/zipball/7bb008edb4c037f04095cd759f32120c32f5a362",
+                "reference": "7bb008edb4c037f04095cd759f32120c32f5a362",
                 "shasum": ""
             },
             "type": "library",
@@ -415,7 +415,7 @@
                 "docs",
                 "yii2"
             ],
-            "time": "2019-03-19T11:35:14+00:00"
+            "time": "2019-03-22T07:05:05+00:00"
         },
         {
             "name": "codexten/yii-adminlte2",
@@ -631,12 +631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codexten/yii-core.git",
-                "reference": "e6a2b2b8b04b1e0cb7687a9553ac6bd9392faa13"
+                "reference": "85769c2c6edbf0d46fdb68600040cc066b65c50a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codexten/yii-core/zipball/e6a2b2b8b04b1e0cb7687a9553ac6bd9392faa13",
-                "reference": "e6a2b2b8b04b1e0cb7687a9553ac6bd9392faa13",
+                "url": "https://api.github.com/repos/codexten/yii-core/zipball/85769c2c6edbf0d46fdb68600040cc066b65c50a",
+                "reference": "85769c2c6edbf0d46fdb68600040cc066b65c50a",
                 "shasum": ""
             },
             "require": {
@@ -651,6 +651,7 @@
                 },
                 "config-plugin": {
                     "params": "src/config/params.php",
+                    "required": "src/config/required.php",
                     "defines": "src/config/defines.php",
                     "i18n": "src/config/i18n.php",
                     "mailer": "src/config/mailer.php",
@@ -674,7 +675,7 @@
                 "codexten",
                 "yii2"
             ],
-            "time": "2019-03-20T13:16:56+00:00"
+            "time": "2019-03-21T05:53:55+00:00"
         },
         {
             "name": "codexten/yii-cron",
@@ -682,12 +683,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codexten/yii-cron.git",
-                "reference": "8bf96a28a169f478c956b440d8a66515fa3388bb"
+                "reference": "20e46798854bdb529811ea02463d34a647234dea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codexten/yii-cron/zipball/8bf96a28a169f478c956b440d8a66515fa3388bb",
-                "reference": "8bf96a28a169f478c956b440d8a66515fa3388bb",
+                "url": "https://api.github.com/repos/codexten/yii-cron/zipball/20e46798854bdb529811ea02463d34a647234dea",
+                "reference": "20e46798854bdb529811ea02463d34a647234dea",
                 "shasum": ""
             },
             "require": {
@@ -712,7 +713,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Metronic Theme integration",
-            "time": "2019-02-20T16:11:49+00:00"
+            "time": "2019-03-21T17:44:06+00:00"
         },
         {
             "name": "codexten/yii-mailqueue",
@@ -796,6 +797,41 @@
             "time": "2019-03-20T11:45:52+00:00"
         },
         {
+            "name": "codexten/yii-settings",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codexten/yii-settings.git",
+                "reference": "19047c643628b49a2145cd303dfd783b9ebdfa49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codexten/yii-settings/zipball/19047c643628b49a2145cd303dfd783b9ebdfa49",
+                "reference": "19047c643628b49a2145cd303dfd783b9ebdfa49",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "sconfig-plugin": {
+                    "settings": "src/config/settings.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "codextend\\yii\\settings\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "codexten,yii,settings",
+            "keywords": [
+                "eii"
+            ],
+            "time": "2019-02-18T16:28:45+00:00"
+        },
+        {
             "name": "codexten/yii-user",
             "version": "dev-master",
             "source": {
@@ -834,12 +870,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codexten/yii-web.git",
-                "reference": "6cf37ebfec9600415426b94153b99a379d30c527"
+                "reference": "1cf9c8fe7c017a7f94ed6c710f0d05a0c9000286"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codexten/yii-web/zipball/6cf37ebfec9600415426b94153b99a379d30c527",
-                "reference": "6cf37ebfec9600415426b94153b99a379d30c527",
+                "url": "https://api.github.com/repos/codexten/yii-web/zipball/1cf9c8fe7c017a7f94ed6c710f0d05a0c9000286",
+                "reference": "1cf9c8fe7c017a7f94ed6c710f0d05a0c9000286",
                 "shasum": ""
             },
             "require": {
@@ -871,7 +907,7 @@
                 "codexten",
                 "yii2"
             ],
-            "time": "2019-03-06T11:51:46+00:00"
+            "time": "2019-03-20T16:57:53+00:00"
         },
         {
             "name": "composer/installers",
@@ -2748,12 +2784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "2d5d1f07e02269f6f5cd5a7e6b8f3a2f38552ef6"
+                "reference": "78cfeccc99a060c7c220e61668e760d4317df0f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/2d5d1f07e02269f6f5cd5a7e6b8f3a2f38552ef6",
-                "reference": "2d5d1f07e02269f6f5cd5a7e6b8f3a2f38552ef6",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/78cfeccc99a060c7c220e61668e760d4317df0f9",
+                "reference": "78cfeccc99a060c7c220e61668e760d4317df0f9",
                 "shasum": ""
             },
             "require": {
@@ -2794,7 +2830,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-03-12T14:29:13+00:00"
+            "time": "2019-03-21T18:51:37+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3108,12 +3144,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "b091678157b941a766fd0fe3e4d654c4c1eb708b"
+                "reference": "c639e6f71fb5d4b29ea0261ca160d400d67204bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b091678157b941a766fd0fe3e4d654c4c1eb708b",
-                "reference": "b091678157b941a766fd0fe3e4d654c4c1eb708b",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/c639e6f71fb5d4b29ea0261ca160d400d67204bd",
+                "reference": "c639e6f71fb5d4b29ea0261ca160d400d67204bd",
                 "shasum": ""
             },
             "require": {
@@ -3200,7 +3236,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-03-20T11:44:22+00:00"
+            "time": "2019-03-22T12:59:26+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -3610,12 +3646,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hiqdev/composer-config-plugin.git",
-                "reference": "9f61a782084ee2fa0f68ef4662cb9858752246f4"
+                "reference": "597227a727f51aeb36f70837039a8358714a1aa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hiqdev/composer-config-plugin/zipball/9f61a782084ee2fa0f68ef4662cb9858752246f4",
-                "reference": "9f61a782084ee2fa0f68ef4662cb9858752246f4",
+                "url": "https://api.github.com/repos/hiqdev/composer-config-plugin/zipball/597227a727f51aeb36f70837039a8358714a1aa5",
+                "reference": "597227a727f51aeb36f70837039a8358714a1aa5",
                 "shasum": ""
             },
             "require": {
@@ -3679,7 +3715,7 @@
                 "config",
                 "plugin"
             ],
-            "time": "2019-01-11T18:05:01+00:00"
+            "time": "2019-03-22T08:32:47+00:00"
         },
         {
             "name": "hiqdev/hidev",
@@ -4039,12 +4075,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "bafd5d26f2e8807bcfe1ef8d9249bc13522ae5ae"
+                "reference": "c468c93d2a9e3e5b8f4e1843e6802f1e76748aa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/bafd5d26f2e8807bcfe1ef8d9249bc13522ae5ae",
-                "reference": "bafd5d26f2e8807bcfe1ef8d9249bc13522ae5ae",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/c468c93d2a9e3e5b8f4e1843e6802f1e76748aa0",
+                "reference": "c468c93d2a9e3e5b8f4e1843e6802f1e76748aa0",
                 "shasum": ""
             },
             "require": {
@@ -4098,55 +4134,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-03-20T06:24:27+00:00"
-        },
-        {
-            "name": "yii2tech/filedb",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yii2tech/filedb.git",
-                "reference": "196174624326dc3864f1276e8934cde7a9b250fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yii2tech/filedb/zipball/196174624326dc3864f1276e8934cde7a9b250fc",
-                "reference": "196174624326dc3864f1276e8934cde7a9b250fc",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "~2.0.14"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii2tech\\filedb\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Paul Klimov",
-                    "email": "klimov.paul@gmail.com"
-                }
-            ],
-            "description": "Provides ActiveRecord interface for data declared in static files",
-            "keywords": [
-                "active",
-                "filedb",
-                "record",
-                "static",
-                "yii2"
-            ],
-            "time": "2018-04-09T08:12:49+00:00"
+            "time": "2019-03-22T07:50:14+00:00"
         },
         {
             "name": "yiisoft/yii2-debug",
