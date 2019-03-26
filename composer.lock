@@ -591,12 +591,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codexten/yii-app-storage.git",
-                "reference": "e0fbe31d248a6a2fd8a3bc7b6669c6ab0a6ebc7d"
+                "reference": "d6a47c063aa33dae04b836aca4d3014bc0656edb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codexten/yii-app-storage/zipball/e0fbe31d248a6a2fd8a3bc7b6669c6ab0a6ebc7d",
-                "reference": "e0fbe31d248a6a2fd8a3bc7b6669c6ab0a6ebc7d",
+                "url": "https://api.github.com/repos/codexten/yii-app-storage/zipball/d6a47c063aa33dae04b836aca4d3014bc0656edb",
+                "reference": "d6a47c063aa33dae04b836aca4d3014bc0656edb",
                 "shasum": ""
             },
             "require": {
@@ -626,7 +626,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "storage app yii 2.0 or higher",
-            "time": "2019-02-28T08:46:40+00:00"
+            "time": "2019-03-25T05:58:29+00:00"
         },
         {
             "name": "codexten/yii-bootstrap3",
@@ -722,17 +722,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codexten/yii-cron.git",
-                "reference": "20e46798854bdb529811ea02463d34a647234dea"
+                "reference": "e5b530ef9b5b46d30288bbf69ec5ef2dae1d4bd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codexten/yii-cron/zipball/20e46798854bdb529811ea02463d34a647234dea",
-                "reference": "20e46798854bdb529811ea02463d34a647234dea",
+                "url": "https://api.github.com/repos/codexten/yii-cron/zipball/e5b530ef9b5b46d30288bbf69ec5ef2dae1d4bd1",
+                "reference": "e5b530ef9b5b46d30288bbf69ec5ef2dae1d4bd1",
                 "shasum": ""
             },
             "require": {
                 "codexten/yii-web": "~2.0",
-                "mtdowling/cron-expression": "~1.1"
+                "mult1mate/cron-manager": "*"
             },
             "type": "library",
             "extra": {
@@ -752,7 +752,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Metronic Theme integration",
-            "time": "2019-03-21T17:44:06+00:00"
+            "time": "2019-03-25T17:47:40+00:00"
         },
         {
             "name": "codexten/yii-mailqueue",
@@ -841,12 +841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codexten/yii-process.git",
-                "reference": "0a5e179b1641507ecbe01c59f91a3742f033640f"
+                "reference": "599278f86c83696d9ee1f0d91db42d91f2e43457"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codexten/yii-process/zipball/0a5e179b1641507ecbe01c59f91a3742f033640f",
-                "reference": "0a5e179b1641507ecbe01c59f91a3742f033640f",
+                "url": "https://api.github.com/repos/codexten/yii-process/zipball/599278f86c83696d9ee1f0d91db42d91f2e43457",
+                "reference": "599278f86c83696d9ee1f0d91db42d91f2e43457",
                 "shasum": ""
             },
             "require": {
@@ -863,7 +863,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "codextend\\yii\\process\\": "src"
+                    "codexten\\yii\\process\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -871,7 +871,7 @@
             "keywords": [
                 "codexten"
             ],
-            "time": "2019-03-22T15:38:46+00:00"
+            "time": "2019-03-24T12:54:56+00:00"
         },
         {
             "name": "codexten/yii-settings",
@@ -2417,6 +2417,58 @@
             "time": "2017-01-23T04:29:33+00:00"
         },
         {
+            "name": "mult1mate/cron-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MUlt1mate/cron-manager.git",
+                "reference": "ccea814d338a0b5edf0e2008ebfe07038090ca5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MUlt1mate/cron-manager/zipball/ccea814d338a0b5edf0e2008ebfe07038090ca5a",
+                "reference": "ccea814d338a0b5edf0e2008ebfe07038090ca5a",
+                "shasum": ""
+            },
+            "require": {
+                "mtdowling/cron-expression": "1.2.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "^0.4.0",
+                "phpunit/phpunit": "4.*"
+            },
+            "suggest": {
+                "monolog/monolog": "Allow writing log messages"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "mult1mate\\crontab\\": "src/",
+                    "mult1mate\\crontab_tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "MUlt1mate",
+                    "email": "multimate.abs@gmail.com"
+                }
+            ],
+            "description": "Flexible cron tasks manager for MVC-type applications",
+            "homepage": "https://cron.multimate.ru",
+            "keywords": [
+                "cron",
+                "crontab",
+                "schedule",
+                "tasks manager"
+            ],
+            "time": "2018-08-12T11:02:45+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v9.99.99.x-dev",
             "source": {
@@ -2749,12 +2801,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "264c2257e6feeda8af3be89ccff32cfc7b2fa267"
+                "reference": "c4e1d61b12c52e3b1037a0203d54a26f3af5c083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/264c2257e6feeda8af3be89ccff32cfc7b2fa267",
-                "reference": "264c2257e6feeda8af3be89ccff32cfc7b2fa267",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/c4e1d61b12c52e3b1037a0203d54a26f3af5c083",
+                "reference": "c4e1d61b12c52e3b1037a0203d54a26f3af5c083",
                 "shasum": ""
             },
             "require": {
@@ -2799,7 +2851,7 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2019-03-24T06:18:52+00:00"
+            "time": "2019-03-25T15:41:41+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2861,12 +2913,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "9e598a10c16df72659cc711c10f2dcd6e455b474"
+                "reference": "61094ca72e8934c6502af5259ef6296eb09aa424"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/9e598a10c16df72659cc711c10f2dcd6e455b474",
-                "reference": "9e598a10c16df72659cc711c10f2dcd6e455b474",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/61094ca72e8934c6502af5259ef6296eb09aa424",
+                "reference": "61094ca72e8934c6502af5259ef6296eb09aa424",
                 "shasum": ""
             },
             "require": {
@@ -2907,7 +2959,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-03-22T15:39:02+00:00"
+            "time": "2019-03-25T07:48:46+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3221,12 +3273,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "ecec08ffc282c835b19cfb23df5278b89ba4286e"
+                "reference": "5d5bac9eec63083f9472740515e79f9dd5ec9230"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ecec08ffc282c835b19cfb23df5278b89ba4286e",
-                "reference": "ecec08ffc282c835b19cfb23df5278b89ba4286e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/5d5bac9eec63083f9472740515e79f9dd5ec9230",
+                "reference": "5d5bac9eec63083f9472740515e79f9dd5ec9230",
                 "shasum": ""
             },
             "require": {
@@ -3313,7 +3365,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-03-23T08:29:38+00:00"
+            "time": "2019-03-24T12:57:46+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -4093,12 +4145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "57f1ce82c997f5a8701b89ef970e36bb657fd09c"
+                "reference": "212a27b731e5bfb735679d1ffaac82bd6a1dc996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/57f1ce82c997f5a8701b89ef970e36bb657fd09c",
-                "reference": "57f1ce82c997f5a8701b89ef970e36bb657fd09c",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/212a27b731e5bfb735679d1ffaac82bd6a1dc996",
+                "reference": "212a27b731e5bfb735679d1ffaac82bd6a1dc996",
                 "shasum": ""
             },
             "require": {
@@ -4144,7 +4196,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-02-23T15:06:07+00:00"
+            "time": "2019-03-25T07:48:46+00:00"
         },
         {
             "name": "twig/twig",
@@ -4219,12 +4271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "d6ed909958b831c7537428cb98209bd06ce9910c"
+                "reference": "72af358d50312b0d3635ba60a4aeca870cd98633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/d6ed909958b831c7537428cb98209bd06ce9910c",
-                "reference": "d6ed909958b831c7537428cb98209bd06ce9910c",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/72af358d50312b0d3635ba60a4aeca870cd98633",
+                "reference": "72af358d50312b0d3635ba60a4aeca870cd98633",
                 "shasum": ""
             },
             "require": {
@@ -4268,7 +4320,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2019-03-23T19:23:21+00:00"
+            "time": "2019-03-25T23:04:41+00:00"
         },
         {
             "name": "yiisoft/yii2-gii",
