@@ -11,6 +11,7 @@ services:
 #    - /disks:/disks
 #    - ${DATA_PATH_HOST}/storage/source:/app/public/storage/source
     - ${HOME}/project:/project
+    - ${HOME}/instances:/instances
     - ${HOME}/.ssh:/root/.ssh
     - ${HOME}/.composer:/root/.composer
     - ./docker/.bashrc:/root/.bashrc
@@ -31,6 +32,7 @@ services:
     - /en:/en
     - /etc/hosts:/host-machine/hosts
     - ${HOME}/project:/project
+    - ${HOME}/instances:/instances
 #    - /disks:/disks
 #    - ${DATA_PATH_HOST}/storage/source:/app/public/storage/source
     - ${HOME}/apps:/root/apps
