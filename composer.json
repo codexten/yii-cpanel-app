@@ -25,6 +25,7 @@
     "psr-4": {
       "core\\": "src/core",
       "admin\\": "src/admin",
+      "console\\": "src/console",
       "data\\": "src/data"
     }
   },

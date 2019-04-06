@@ -13,5 +13,6 @@ return [
                 'core\migrations',
             ],
         ],
+        'instance' => \console\controllers\InstanceController::class,
     ],
 ];

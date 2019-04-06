@@ -52,17 +52,17 @@ services:
     ports:
     - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWOD}
+      MYSQL_ROOT_PASSWORD: ${CP_DB_ROOT_PASSWOD}
       MYSQL_DATABASE: ${DB_NAME}
-      MYSQL_USER: ${DB_USERNAME}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${CP_DB_USERNAME}
+      MYSQL_PASSWORD: ${CP_DB_ROOT_PASSWOD}
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
       PMA_ARBITRARY: 1
-      MYSQL_USER: ${DB_USERNAME}
-      MYSQL_PASSWORD: ${DB_USERNAME}
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWOD}
+      MYSQL_USER: ${CP_DB_USERNAME}
+      MYSQL_PASSWORD: ${CP_DB_USERNAME}
+      MYSQL_ROOT_PASSWORD: ${CP_DB_ROOT_PASSWOD}
     ports:
     - 8080:80
     links:
