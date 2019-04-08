@@ -51,7 +51,7 @@ COPY ./php.ini /usr/local/etc/php/
 
 RUN apt-get purge -y g++ \
     && apt-get autoremove -y \
-    && rm -r /var/lib/apt/lists/* \
+#    && rm -r /var/lib/apt/lists/* \
     && rm -rf /tmp/*
 
 RUN php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer
