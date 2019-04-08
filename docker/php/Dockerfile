@@ -88,7 +88,7 @@ RUN chmod 0644 /etc/cron.d/simple-cron
 # Create the log file to be able to run tail
 RUN touch /var/log/cron.log
 
-WORKDIR /project
+WORKDIR /projects
 EXPOSE 9000
 
 add ./startup.sh /

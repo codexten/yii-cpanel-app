@@ -10,7 +10,7 @@ services:
     - /etc/hosts:/host-machine/hosts
 #    - /disks:/disks
 #    - ${DATA_PATH_HOST}/storage/source:/app/public/storage/source
-    - ${HOME}/project:/project
+    - ${HOME}/projects:/projects
     - ${HOME}/instances:/instances
     - ${HOME}/.ssh:/root/.ssh
     - ${HOME}/.composer:/root/.composer
@@ -31,7 +31,7 @@ services:
     - ./:/cpanel
     - /en:/en
     - /etc/hosts:/host-machine/hosts
-    - ${HOME}/project:/project
+    - ${HOME}/projects:/projects
     - ${HOME}/instances:/instances
 #    - /disks:/disks
 #    - ${DATA_PATH_HOST}/storage/source:/app/public/storage/source
