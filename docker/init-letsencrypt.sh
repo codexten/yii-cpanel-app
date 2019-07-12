@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(giventake.world www.giventake.world s.giventake.world)
+domains=(giventake.world www.giventake.world)
 rsa_key_size=4096
 data_path="./docker/data/certbot"
 email="cto@codiac.in" # Adding a valid address is strongly recommended
