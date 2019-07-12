@@ -4,6 +4,7 @@ services:
   app:
     build: docker/php
 #    image: docker/cpanel-php
+    restart: always
     volumes:
     - ./:/cpanel
     - /en:/en
@@ -23,6 +24,7 @@ services:
       args:
       - PHP_UPSTREAM_CONTAINER=app
       - PHP_UPSTREAM_PORT=9000
+    restart: always
     volumes:
     #    - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}
     #    - ${NGINX_HOST_LOG_PATH}:/var/log/nginx
@@ -38,6 +40,8 @@ services:
     - ${HOME}/apps:/root/apps
     - ${HOME}/disks:/root/disks
     - ./docker/.bashrc:/root/.bashrc
+    - ./docker/data/certbot/conf:/etc/letsencrypt
+    - ./docker/data/certbot/www:/var/www/certbot
     ports:
     - 80:80
     - 443:443
@@ -45,6 +49,7 @@ services:
     - app
   db:
     image: mysql:5.7
+    restart: always
     volumes:
     - ${DATA_PATH_HOST}/mysql:/var/lib/mysql
     - ./docker/mysql/config.cnf:/etc/mysql/conf.d/config.cnf
@@ -58,6 +63,7 @@ services:
       MYSQL_PASSWORD: ${CP_DB_ROOT_PASSWOD}
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
+    restart: always
     environment:
       PMA_ARBITRARY: 1
       MYSQL_USER: ${CP_DB_USERNAME}
@@ -67,3 +73,11 @@ services:
     - 8080:80
     links:
     - db
+  certbot:
+    image: certbot/certbot
+    restart: unless-stopped
+    volumes:
+      - ./docker/data/certbot/conf:/etc/letsencrypt
+      - ./docker/data/certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
