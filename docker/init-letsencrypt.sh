@@ -7,7 +7,7 @@ fi
 
 domains=(giventake.world www.giventake.world)
 rsa_key_size=4096
-data_path="./data/certbot"
+data_path="./docker/data/certbot"
 email="cto@codiac.in" # Adding a valid address is strongly recommended
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
