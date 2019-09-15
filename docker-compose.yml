@@ -5,6 +5,7 @@ services:
 #    build: docker/php
     image: codexten/php-fpm:7.1
     restart: always
+    working_dir: /projects
     volumes:
     - ./:/cpanel
     - /en:/en
