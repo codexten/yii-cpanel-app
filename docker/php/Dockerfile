@@ -6,6 +6,7 @@ ENV user www-data
 RUN mkdir en
 RUN chown -R ${user} /projects
 RUN chown -R ${user} /en
+RUN chown -R ${user} /var/www
 
 USER ${user}
 
