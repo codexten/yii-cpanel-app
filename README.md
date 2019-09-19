@@ -10,6 +10,7 @@ Resources
 cpanel 1.x to 2.x upgrading changes
 
 ```shell script
-sudo chown -R $USER:$USER /en /projects /instances ~/projects ~/.composer ~/.ssh 
+sudo chown -R $USER:$USER /en /projects /instances ~/projects ~/.composer ~/.ssh ~/cpanel 
+sudo chown -R 777 /projects/docker/cpanel/mysql
 
 ```
