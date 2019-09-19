@@ -1,6 +1,8 @@
 FROM codexten/php-fpm:7.1
 
 VOLUME /en
+VOLUME /projects
+VOLUME /var/www
 
 ENV user www-data
 RUN mkdir en
@@ -10,4 +12,4 @@ RUN chown -R ${user} /var/www
 
 USER ${user}
 
-CMD tail -f /dev/null
+CMD php-fpm && tail -f /dev/null
