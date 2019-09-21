@@ -2,8 +2,8 @@ version: "3"
 
 services:
   app:
-#    build: docker/php
-    image: codexten/php-fpm:${PHP_VERSION}
+    build: docker/php
+#    image: codexten/php-fpm:${PHP_VERSION}
     restart: always
     working_dir: /projects
     volumes:
@@ -14,7 +14,7 @@ services:
 #    - ${DATA_PATH_HOST}/storage/source:/app/public/storage/source
     - ${HOME}/projects:/projects
     - ${HOME}/instances:/instances
-    - ${HOME}/.ssh:/var/www//.ssh
+    - ${HOME}/.ssh:/var/www/.ssh
     - ${HOME}/.composer:/var/www/.composer
     - ./docker/.bashrc:/var/www/.bashrc
   #    extra_hosts:
