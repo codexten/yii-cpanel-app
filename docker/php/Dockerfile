@@ -11,4 +11,6 @@ RUN chown -R ${user}:${user} /projects
 
 USER ${user}
 
+RUN composer global require hirak/prestissimo
+
 CMD php-fpm && tail -f /dev/null
