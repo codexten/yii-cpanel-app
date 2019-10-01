@@ -6,8 +6,8 @@ VOLUME /var/www
 
 ENV user www-data
 RUN chown -R ${user}:${user} /projects
-RUN chown -R ${user}:${user} /en
-RUN chown -R ${user}:${user} /var/www
+#RUN chown -R ${user}:${user} /en
+#RUN chown -R ${user}:${user} /var/www
 
 USER ${user}
 
