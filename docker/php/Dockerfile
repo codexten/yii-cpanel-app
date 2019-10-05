@@ -25,7 +25,7 @@ RUN set -x \
 	&& groupadd -g ${MY_GID} -r ${MY_GROUP} \
 && useradd -u ${MY_UID} -m -s /bin/bash -g ${MY_GROUP} ${MY_USER}
 
-RUN chown -R ${user}:${user} /en /projects
+RUN chown -R ${MY_USER}:${MY_USER} /en /projects
 
 USER ${MY_USER}
 
