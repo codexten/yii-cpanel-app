@@ -15,3 +15,7 @@ sudo chmod -R 777 /projects/docker/cpanel/mysql
 sudo chown -R $USER:$USER /etc/hosts && ln -s /etc/hosts ~/Desktop/hosts.txt
 
 ```
+
+```shell script
+docker pull codexten/php-fpm:7.1
+```

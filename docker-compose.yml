@@ -14,9 +14,9 @@ services:
 #    - ${DATA_PATH_HOST}/storage/source:/app/public/storage/source
     - ${HOME}/projects:/projects
     - ${HOME}/instances:/instances
-    - ${HOME}/.ssh:/var/www/.ssh
-    - ${HOME}/.composer:/var/www/.composer
-    - ./docker/.bashrc:/var/www/.bashrc
+    - ${HOME}/.ssh:/home/codexten/.ssh
+    - ${HOME}/.composer:/home/codexten/.composer
+    - ./docker/.bashrc:/home/codexten/.bashrc
     - ./docker/php/php.ini:/usr/local/etc/php/conf.d/custom.ini
   #    extra_hosts:
   #      - dev.entero.in:165.227.188.128
