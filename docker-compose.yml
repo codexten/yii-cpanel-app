@@ -71,6 +71,9 @@ services:
       MYSQL_USER: ${CP_DB_USERNAME}
       MYSQL_PASSWORD: ${CP_DB_USERNAME}
       MYSQL_ROOT_PASSWORD: ${CP_DB_ROOT_PASSWOD}
+    volumes:
+      - ./docker/phpmyadmin/config.user.inc:/etc/phpmyadmin/config.user.inc.php
+      - ./docker/phpmyadmin/php.ini:/usr/local/etc/php/conf.d/custom.ini
     ports:
     - 8080:80
     links:
