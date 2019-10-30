@@ -12,4 +12,6 @@ skip-character-set-client-handshake
 
 max_allowed_packet=200M
 
+max_connections = 2000
+
 sql-mode=""
