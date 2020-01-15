@@ -2,6 +2,8 @@ FROM nginx:1.15-alpine
 
 COPY nginx.conf /etc/nginx/
 
+RUN echo http://mirror.yandex.ru/mirrors/alpine/v3.5/main > /etc/apk/repositories; \
+    echo http://mirror.yandex.ru/mirrors/alpine/v3.5/community >> /etc/apk/repositories
 RUN apk update \
     && apk upgrade \
     && apk add --no-cache openssl \
