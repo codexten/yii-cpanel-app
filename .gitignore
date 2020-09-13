@@ -33,7 +33,5 @@ runtime/logs/cron*
 
 # Binaries
 composer.phar
-vendor
-
 # endev
 .ext
