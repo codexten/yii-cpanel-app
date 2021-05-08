@@ -1,7 +1,8 @@
 FROM codexten/php-fpm:7.1
+RUN docker-php-ext-install pcntl
 
 RUN apt-get update -yq \
-    && apt-get install curl gnupg -yq 
+    && apt-get install curl gnupg -yq
 
 RUN apt-get -y install cron
 
@@ -11,6 +12,9 @@ ADD crontab /etc/cron.d/simple-cron
 # Add shell script and grant execution rights
 ADD script.sh /script.sh
 RUN chmod +x /script.sh
+
+# Create the log file to be able to run tail
+RUN touch /var/log/cron.log
 
 # Give execution rights on the cron job
 RUN chmod 0644 /etc/cron.d/simple-cron
@@ -43,10 +47,16 @@ RUN set -x \
 	&& groupadd -g ${MY_GID} -r ${MY_GROUP} \
 && useradd -u ${MY_UID} -m -s /bin/bash -g ${MY_GROUP} ${MY_USER}
 
-RUN chown -R ${MY_USER}:${MY_USER} /en /projects
+#RUN chown -R ${MY_USER}:${MY_USER} /en /projects
 
-USER ${MY_USER}
+#USER ${MY_USER}
 
 #RUN composer global require hirak/prestissimo
 
-CMD php-fpm && tail -f /dev/null
+CMD php-fpm & cron & tail -f /var/log/cron.log
+
+#add ./startup.sh /
+#
+#RUN chmod +x /startup.sh
+
+#CMD ["/startup.sh"]

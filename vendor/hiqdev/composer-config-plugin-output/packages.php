@@ -1365,7 +1365,7 @@ return array (
   array (
     'name' => 'codexten/yii-cpanel-app',
     'version' => '2.9999999.9999999.9999999-dev',
-    'reference' => 'cfe505a7033e4821f01f3e6cc4c9df11b3706b81',
+    'reference' => 'c82c1a825bae39ea7923224de7da77bb05e471b6',
     'aliases' => 
     array (
       '@core' => $baseDir . '/src/core',
