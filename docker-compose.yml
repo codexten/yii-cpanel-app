@@ -29,6 +29,7 @@ services:
     restart: always
     volumes:
       - /var/www/certbot:/var/www/certbot
+      - /etc/letsencrypt:/etc/letsencrypt
       - ./docker/nginx/sites-available:/etc/nginx/sites-available
       - ./docker/nginx/ssl:/etc/nginx/ssl
       - ./:/cpanel
