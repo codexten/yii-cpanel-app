@@ -30,6 +30,7 @@ services:
     volumes:
     #    - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}
     #    - ${NGINX_HOST_LOG_PATH}:/var/log/nginx
+    - /var/www/certbot:/var/www/certbot
     - ./docker/nginx/sites-available:/etc/nginx/sites-available
     - ./docker/nginx/ssl:/etc/nginx/ssl
     - ./:/cpanel
