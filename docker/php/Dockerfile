@@ -1,7 +1,7 @@
 FROM codexten/php-fpm:7.1
 RUN docker-php-ext-install pcntl
 
-RUN apt-get update -yq \
+RUN apt-get --allow-releaseinfo-change update -yq \
     && apt-get install curl gnupg -yq
 
 RUN apt-get -y install cron
