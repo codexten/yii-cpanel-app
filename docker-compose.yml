@@ -8,7 +8,7 @@ services:
     working_dir: /projects
     volumes:
     - ./:/cpanel
-    - /en:/en
+   # - /en:/en
     - /etc/hosts:/host-machine/hosts
 #    - /disks:/disks
 #    - ${DATA_PATH_HOST}/storage/source:/app/public/storage/source
@@ -28,12 +28,13 @@ services:
       - PHP_UPSTREAM_PORT=9000
     restart: always
     volumes:
-      - /var/www/certbot:/var/www/certbot
+      #- /var/www/certbot:/var/www/certbot
+      - /var/www/certbot
       - /etc/letsencrypt:/etc/letsencrypt
       - ./docker/nginx/sites-available:/etc/nginx/sites-available
       - ./docker/nginx/ssl:/etc/nginx/ssl
       - ./:/cpanel
-      - /en:/en
+     # - /en:/en
       - /etc/hosts:/host-machine/hosts
       - ${HOME}/projects:/projects
       - ${HOME}/instances:/instances
@@ -43,7 +44,7 @@ services:
 #      - ./docker/data/certbot/conf:/etc/letsencrypt
 #      - ./docker/data/certbot/www:/var/www/certbot
     ports:
-    - 80:80
+    - 81:80
     - 443:443
     depends_on:
     - app
@@ -51,11 +52,13 @@ services:
     image: mysql:5.7
     restart: always
     volumes:
-    - ${DATA_PATH_HOST}/mysql:/var/lib/mysql
+    - cpanel_db:/var/lib/mysql
+#    - /var/lib/mysql
     - ./docker/mysql/config.cnf:/etc/mysql/conf.d/config.cnf
-    - /disks:/disks
+    #- /disks:/disks
+    - /disks
     ports:
-    - 3306:3306
+    - 3307:3306
     environment:
       MYSQL_ROOT_PASSWORD: ${CP_DB_ROOT_PASSWOD}
       MYSQL_DATABASE: ${DB_NAME}
@@ -103,3 +106,5 @@ services:
 #      - mongo
 #    links:
 #      - mongo
+volumes:
+  cpanel_db:
